@@ -36,7 +36,7 @@ internal class Report
         htmlContent.AppendLine("</style></head><body>");
 
         // Título da página
-        htmlContent.AppendLine("<h1>Relatório dos Testes - Havanna</h1>");
+        htmlContent.AppendLine("<h1>Relatório dos Testes - SiteA</h1>");
 
         // Tabela
         htmlContent.AppendLine("<table>");
