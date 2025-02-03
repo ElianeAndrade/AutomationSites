@@ -8,8 +8,8 @@ internal class Login
 {
     private Dictionary<string, (string Login, string Senha)> credentials = new Dictionary<string, (string, string)>
     {
-        { "UAT", ("45926744806", "Teste@123") },
-        { "RC", ("47498928825", "Test123!") },
+        { "Ambiente de Teste", ("123456", "Teste@123") },
+        { "Ambiente de Release", ("654321", "Test123!") },
         { "PROD", ("teste@prod.com.br", "senha3") }
     };
 

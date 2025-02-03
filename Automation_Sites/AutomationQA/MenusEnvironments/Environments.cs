@@ -8,8 +8,8 @@ internal class Environments : Welcome
 
     private Dictionary<int, string> environment = new Dictionary<int, string>
     {
-        { 1, "UAT" },
-        { 2, "RC" },
+        { 1, "Ambiente de Teste" },
+        { 2, "Ambiente de Release" },
         { 3, "PRODUÇÃO" }
     };
 
@@ -63,7 +63,7 @@ internal class Environments : Welcome
             switch (selectedEnvironment)
             {
                 case "UAT":
-                    await page.GotoAsync("https://uat.satelital.com.br/havanna", new PageGotoOptions
+                    await page.GotoAsync("https://ambiente de teste/SiteA", new PageGotoOptions
                     {
                         Timeout = 60000, 
                         WaitUntil = WaitUntilState.NetworkIdle // Espera até que a rede esteja ociosa
@@ -71,7 +71,7 @@ internal class Environments : Welcome
                     Console.WriteLine("Acessando página UAT da campanha!");
                     break;
                 case "RC":
-                    await page.GotoAsync("https://rc.satelital.com.br/havanna", new PageGotoOptions
+                    await page.GotoAsync("https://ambiente de release/SiteA", new PageGotoOptions
                     {
                         Timeout = 60000, 
                         WaitUntil = WaitUntilState.NetworkIdle 
@@ -79,7 +79,7 @@ internal class Environments : Welcome
                     Console.WriteLine("Acessando página RC da campanha!");
                     break;
                 case "PRODUÇÃO":
-                    await page.GotoAsync("https://prod.satelital.com.br/havanna", new PageGotoOptions
+                    await page.GotoAsync("https://ambiente de produçao/SiteA", new PageGotoOptions
                     {
                         Timeout = 60000, 
                         WaitUntil = WaitUntilState.NetworkIdle 

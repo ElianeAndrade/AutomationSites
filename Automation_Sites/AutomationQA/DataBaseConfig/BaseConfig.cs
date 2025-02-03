@@ -40,7 +40,7 @@ public class BaseConfig
             SELECT TOP 1 parDocumentID
             FROM tbParticipant 
             WHERE parStatus = 'F' 
-            AND idCampaign = 'BRHAV' 
+            AND idCampaign = 'SiteA' 
             AND parDocumentId IS NOT NULL 
             AND parDocumentId <> '' 
             AND MustChangePassword = 0
@@ -59,7 +59,7 @@ public class BaseConfig
             SELECT TOP 1 p.proProviderCode 
             FROM tbProduct p
             INNER join tbProdXCamp pc on pc.idProduct = p.idProduct 
-            WHERE pc.IdCampaign ='BRHAV'
+            WHERE pc.IdCampaign ='SiteA'
             AND p.proStockQuantityShop > 0 
             AND p.StockCurrent > 0";
 
